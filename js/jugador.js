@@ -4,28 +4,20 @@ var Jugador = {
   /* el sprite contiene la ruta de la imagen
    */
   sprite: "imagenes/auto_rojo_abajo.png",
-  x: 130,
-  y: 160,
+  x: 475,
+  y: 435,
   ancho: 15,
-  alto: 30,
+  alto: 15,
   velocidad: 10,
   vidas: 5,
   mover: function(nuevaX, nuevaY) {
     if (nuevaX > 0) {
-      this.ancho = 30;
-      this.alto = 15;
       this.sprite = "imagenes/auto_rojo_derecha.png";
     } else if (nuevaY > 0) {
-      this.ancho = 15;
-      this.alto = 30;
       this.sprite = "imagenes/auto_rojo_abajo.png";
     } else if (nuevaX < 0) {
-      this.ancho = 30;
-      this.alto = 15;
       this.sprite = "imagenes/auto_rojo_izquierda.png";
     } else if (nuevaY < 0) {
-      this.ancho = 15;
-      this.alto = 30;
       this.sprite = "imagenes/auto_rojo_arriba.png";
     }
 

@@ -2,7 +2,6 @@
 modificarlo para hacer que se comporte de la forma que mas te guste.
 Este zombie recibe los mismos parametros que el objeto Enemigo. Podes consultar
 el archivo Enemigo.js para entender que es cada uno. */
-
 var ZombieCaminante = function(
   sprites,
   x,
@@ -34,7 +33,6 @@ ZombieCaminante.prototype.mover = function() {
     this.y += this.velocidad;
     this.x -= this.velocidad;
   }
-
   /* En esta parte lo que hacemos es invertir la direccion horizontal si
   toca uno de sus limites, modificando su velocidad. Si multiplicamos por -1 la
   velocidad lo que estamos haciendo es invertir su direccion.*/
